@@ -1,0 +1,17 @@
+
+{% if user.is_authenticated %}
+
+ Вы вошли как {{ user.username }}
+<a href="#">Выйти</a>
+
+
+{% else %}
+
+<a href="#">Зарегистрироваться</a>
+<a href="#">Войти</a>
+
+{% endif %}
+<br>
+<br>
+
+{% block content %}{% endblock %}

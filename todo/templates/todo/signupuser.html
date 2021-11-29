@@ -1,0 +1,18 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+
+<h1>Зарегистрироваться</h1>
+
+<h2>{{ error }}</h2>
+<!-- не отображается в ссылке, создание объектов или действий -->
+<form method="POST">
+  <!-- csrf_token предотвращение ошибки -->
+  {% csrf_token %}
+  {{ form.as_p }}
+  <!-- кнопка подтверждения -->
+  <button type="submit">Зарегистрироваться</button>
+</form>
+
+{% endblock %}
