@@ -1,7 +1,18 @@
-{% extends 'todo/base.html' %}
+{% extends "todo/base.html" %}
 
 {% block content %}
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
 
-home
+                 <h1>Легко справляйся в задачами! Простой Todo list менеджер</h1><br>
+            <p><b>Жизнь</b> - забавная штука, но она непроста. У вас есть множество задач которые вы должны успеть сделать. <b>Todo list</b> создан, чтобы планировать вашу жизнь и помогать вам не забывать о главном. Реорганизуй свою жизнь, мы поможем.</p><br>
+        <a role="button" class="btn btn-outline-secondary btn-lg" href="{% url 'currenttodos' %}">Поехали!</a>
+        </div>
+    </div>
 
 {% endblock %}
